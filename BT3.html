@@ -1,14 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <script>
-        
+        let inp = +prompt(' Nhập số nguyên x :');
+        let snt = true;
+        let count=0;
+        for (let i = 2; i < inp; i++) {
+            if (snt % i == 0) {
+                snt = false;
+                count++;
+            }
+        }
+        if (snt) {
+            function sumOfListPrime(){
+               let tong =0; 
+               for(j=0; j<=count; j++) {
+                tong +=snt;
+               }
+            }
+        }
+
+
     </script>
 </body>
+
 </html>
